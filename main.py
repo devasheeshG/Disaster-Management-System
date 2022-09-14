@@ -18,9 +18,9 @@ messagebox.showinfo('Welcome', 'Welcome to the Disaster Management System')
 
 
 # ------------saving logs--------------------------------------------------------
-def initiate_logs():
-    logging.info('-------------------------------------'*4)
-    logging.info('Log at {}'.format(datetime.now()))
+# def initiate_logs():
+#     logging.info('-------------------------------------'*4)
+#     logging.info('Log at {}'.format(datetime.now()))
 
 
 # os.makedirs('logs\log_'+str(datetime.now())+'.log',exist_ok=True)
@@ -34,21 +34,21 @@ def initiate_logs():
 # )
 
 
-def save_logs(text, type):
-    if type == 'error':
-        logging.error(text)
-    elif type == 'warning':
-        logging.warning(text)
-    elif type == 'info':
-        logging.info(text)
-    elif type == 'debug':
-        logging.debug(text)
-    elif type == 'critical':
-        logging.critical(text)
-    elif type == 'exception':
-        logging.exception(text)
-    else:
-        logging.warning('No such log type exists, log is : ' + text)
+# def save_logs(text, type):
+#     if type == 'error':
+#         logging.error(text)
+#     elif type == 'warning':
+#         logging.warning(text)
+#     elif type == 'info':
+#         logging.info(text)
+#     elif type == 'debug':
+#         logging.debug(text)
+#     elif type == 'critical':
+#         logging.critical(text)
+#     elif type == 'exception':
+#         logging.exception(text)
+#     else:
+#         logging.warning('No such log type exists, log is : ' + text)
 
 # ------------------------------------------------------------------------------
 
